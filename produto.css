@@ -1,6 +1,7 @@
 header {
     background: #BBBBBB;
     padding: 20px;
+    width: auto;
 }
 
 .caixa {
@@ -26,4 +27,39 @@ nav a {
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
+}
+
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+    
+}
+
+.produtos li {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+    background-color: #CCCCCC;
+    margin:0 1.5%; /* espaçamento externo */
+    padding: 30px 20px; /* espaçamento interno */
+    box-sizing: border-box; /* espaçamento lateral dentro do espaçamento percentual -> width é definitivo. o elemento sempre ocupará 30% da largura */
+}
+
+.produtos h2 { 
+    font-weight: bolder;
+    font-size: large;
+    text-transform: uppercase;
+
+}
+
+.descricao {
+    font-size: 18px;
+}
+
+.preço {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
 }
