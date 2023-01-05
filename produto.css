@@ -58,7 +58,7 @@ nav a:hover { /*quando o mouse estiver por cima dos links de navegação */
 }
 
 .produtos li:hover h2 { /*quando o mouse estiver por cima dos produtos o título vai ser alterado */
-    font-size: 30px;
+    font-size: 22px;
 }
 
 .produtos li:active {
@@ -80,4 +80,17 @@ nav a:hover { /*quando o mouse estiver por cima dos links de navegação */
     font-weight: bold;
     font-size: 20px;
     margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg"); /* a imagem se replica até cobrir todo o espaço */
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+    
 }
