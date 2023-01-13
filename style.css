@@ -1,54 +1,96 @@
-body {
-    background-color: #FFFFFF;
-} 
-
-.tituloprincipal {
-    padding-left: 20px;
-}
-
-#banner {
-    width: 100%;
-}
-
-.principal {
-    background-color: #CCCCCC;
+header {
+    background: #BBBBBB;
     padding: 20px;
-}  
-
-.titulocentralizado {
-    text-align: center;
-}
-        
-p {
-     text-align: center;
+    width: auto;
 }
 
-#missao {
-    font-size: 20px;
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
 
-em strong {
-    color: red;
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-.itens {
-    font-style: italic;
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-.benefícios {
-    background-color: #FFFFFF;
-    padding: 20px;
+nav a {
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
-ul {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+nav a:hover { /*quando o mouse estiver por cima dos links de navegação */ 
+    color: #C78C19;
+    text-decoration: underline;
+}
 
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
     
 }
 
-.imagembeneficios {
-    width: 50%;
+.produtos li {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+    margin:0 1.5%; /* espaçamento externo */
+    padding: 30px 20px; /* espaçamento interno */
+    box-sizing: border-box; /* espaçamento lateral dentro do espaçamento percentual -> width é definitivo. o elemento sempre ocupará 30% da largura */
+    border: 2px solid #000000; /* a borda fica posicionada entre o padding e a margin */
+    border-radius: 10px; /* a borda arredondada se constrói como se tivesse um círculo no canto da borda*/
+}
+
+.produtos li:hover{
+    border-color: #C78C19;
+}
+
+.produtos li:hover h2 { /*quando o mouse estiver por cima dos produtos o título vai ser alterado */
+    font-size: 22px;
+}
+
+.produtos li:active {
+    border-color: #a35104;
+}
+
+.produtos h2 { 
+    font-weight: bolder;
+    font-size: large;
+    text-transform: uppercase;
+
+}
+
+.descricao {
+    font-size: 18px;
+}
+
+.preço {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    background: url("bg.jpg"); /* a imagem se replica até cobrir todo o espaço */
+    padding: 40px 0;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin-top: 20px;
+    
 }
