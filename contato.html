@@ -24,28 +24,31 @@
         <main>
             <form>
                 <label for="nomecompleto">Nome e sobrenome</label>
-                <input type="text" id="nomecompleto" class="input-padrao"><!-- label e input sempre andam juntos em um formulário -->
-                
+                <input type="text" id="nomecompleto" class="input-padrao" required><!-- label e input sempre andam juntos em um formulário -->
+                <!-- required é uma palavra reservada que torna o preenchimento do campo obrigatório-->
+               
                 <label for="email">E-mail</label>
-                <input type="text" id="email"  class="input-padrao">
+                <input type="email" id="email"  class="input-padrao" required placeholder="seuemail@dominio.com">
 
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" class="input-padrao">
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+                <!--placeholder é o exemplo de como a informação deve ser preenchida-->
 
                 <label for="mensagem">Mensagem</label>
                 <textarea cols="70" rows="10" id="mensagem"></textarea><!--tag de conteúdo. aqui o usuário tem opção de colocar um texto
                 complexo, com mais de uma linha-->
 
-                <div>
-                    <p>Como prefere o nosso contato?</p>
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
 
                     <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">E-mail</label>
+                    <!-- site mobileinputtypes mostra os tipos para celular, que modificam o teclado e facilitam a vida do usuário-->
                     
                     <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
                     
-                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whastapp" id="radio-whatsapp">WhatsApp</label>
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whastapp" id="radio-whatsapp" checked>WhatsApp</label>
                     
-                </div>
+                </fieldset>
 
                 <div>
                     <p>Em qual horário prefere ser atendido?</p>
@@ -56,8 +59,8 @@
                     </select>
                 </div>
                 
-                <label class="checkbox"><input type="checkbox">Gostaria de receber nossas novidades por e-mail?</label>
-                
+                <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por e-mail?</label>
+                <!-- checked é uma palavra reservada que deixa a opção já marcada quando inicia a página-->
                 <input type="submit" value="Enviar Formulário">
                 <!--em todo form, haverá label, input text e input submit p enviar os dados-->
             
