@@ -4,6 +4,41 @@ header {
     width: auto;
 }
 
+/*css da pág inicial */
+.banner { 
+    width: 100%;   
+}
+
+.tituloprincipal {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    clear: left; /* limpa o float */
+}
+
+.principal p {
+    margin-bottom: 1em;
+}
+
+.principal strong {
+    font-weight:bold;  
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.imagembeneficios {
+    width: 60%;
+}
+
+.utensilios {
+    width:120px;
+    float:left; /*imagem flutuante. possibilita o texto ao redor da img.
+     como se estivesse ao redor da sombra */
+    margin: 0 20px 20px 0;
+}
+
 .caixa {
     position: relative;
     max-width: 940px;
