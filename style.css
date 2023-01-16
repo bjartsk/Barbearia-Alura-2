@@ -108,6 +108,41 @@ form label, form legend {
     margin: 20px 0;
 
 }
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all; /* vai mudar no tempo designado */
+    cursor: pointer; /* cursor muda pra mãozinha */
+}
+
+.enviar:hover {
+    background: darkorange;
+    transform: scale(1.2) /* aumenta em 20% todos os item nessa classe*/
+    
+}
+
+table {
+    margin: 20px 20px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 15px 8px;
+}
+
 footer {
     text-align: center;
     background: url("bg.jpg"); /* a imagem se replica até cobrir todo o espaço */
