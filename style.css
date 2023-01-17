@@ -21,6 +21,13 @@ header {
     clear: left; /* limpa o float */
 }
 
+.principal {
+    padding: 3em 0;
+    background: #fefefe;
+    max-width: 940px;
+    margin: 0 auto;
+}
+
 .principal p {
     margin-bottom: 1em;
 }
@@ -37,6 +44,30 @@ header {
     width: 60%;
 }
 
+.conteudo-beneficios {
+    width:640px;
+    margin:0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display:inline-block; /* interpreta tudo do html, até o espaço vazio */
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5; /* espaçamento */
+}
+
+.itens:first-child { /* pseudo-elemento que seleciona apenas o primeiro item */
+    font-weight: bold;
+}
+
+.beneficios {
+    padding: 3em 0;
+    background: #555555;
+}
+
 .utensilios {
     width:120px;
     float:left; /*imagem flutuante. possibilita o texto ao redor da img.
@@ -46,6 +77,13 @@ header {
 
 .mapa {
     padding: 3em 0;
+    background: linear-gradient(#fefefe, #555555); /* é possível colocar quantas cores quiser - na primeira propriedade é possível colocar a inclinação: 45deg */
+}
+
+.mapa-link {
+    width: 940px;
+    margin: 0 auto;
+
 }
 
 .mapa p { 
@@ -136,11 +174,7 @@ nav a:hover { /*quando o mouse estiver por cima dos links de navegação */
     margin-top: 10px;
 }
 
-main {
-    max-width: 940px;
-    margin: 0 auto;
-}
-
+/* página de contato */
 form {
     margin: 40px;
 }
