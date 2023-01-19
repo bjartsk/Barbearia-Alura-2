@@ -21,6 +21,7 @@ header {
     clear: left; /* limpa o float */
 }
 
+
 .principal {
     padding: 3em 0;
     background: #fefefe;
@@ -42,6 +43,13 @@ header {
 
 .imagembeneficios {
     width: 60%;
+    transition: 500ms;
+    box-shadow: 10px 10px 5px #000000;
+}
+
+.imagembeneficios:hover {
+    opacity:0.3;
+    transition: 800ms;  
 }
 
 .conteudo-beneficios {
@@ -57,6 +65,10 @@ header {
 
 .itens {
     line-height: 1.5; /* espaçamento */
+}
+
+.itens:before {
+    content: "★";
 }
 
 .itens:first-child { /* pseudo-elemento que seleciona apenas o primeiro item */
